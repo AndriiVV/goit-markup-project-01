@@ -1,9 +1,22 @@
-.products {
+.products__headings {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
 }
 
 .products__title {
   text-align: center;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 }
 
 .products__item {
@@ -13,8 +26,6 @@
   height: 485px;
   background: #ffb8ca;
   border-radius: 24px;
-  margin-top: 129px;
-  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -77,13 +88,27 @@
 }
 
 .products__ice-cream {
-  &::before {
-    background-image: url(../images/products/pink-ice-cream-1200-2x.png);
-  }
+  margin-top: 144px;
+  margin-bottom: 0px;
+  background: #ffb8ca;
+}
+
+.products__ice-coffee {
+  margin-top: 130px;
+  margin-bottom: 0px;
+  background: #f0d1a5;
+}
+
+.products__milkshakes {
+  margin-top: 129px;
+  margin-bottom: 98px;
+  background: #c2e297;
 }
 
 .products__ice-cream {
-  background: #ffb8ca;
+  &::before {
+    background-image: url(../images/products/pink-ice-cream-1200-2x.png);
+  }
 }
 
 .products__ice-coffee {
@@ -92,16 +117,8 @@
   }
 }
 
-.products__ice-coffee {
-  background: #f0d1a5;
-}
-
 .products__milkshakes {
   &::before {
     background-image: url(../images/products/milk-sheak-1200-2x.png);
   }
-}
-
-.products__milkshakes {
-  background: #c2e297;
 }
