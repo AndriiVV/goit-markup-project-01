@@ -1,0 +1,50 @@
+// Наиболее часто встречающийся шрифт
+
+body {
+  font-family: Titan One;
+  font-style: normal;
+}
+
+// Класс для оформления заголовков секций "Products", "How it's made?", "With passion"
+
+.title {
+  @include font(400, 34px, 39px);
+  text-transform: uppercase;
+  color: var(--main-red-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 48px, 55px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 66px, 0.06em);
+  }
+}
+
+.small-title {
+  @include font(400, 18px, 21px);
+  text-transform: uppercase;
+  color: var(--secondary-rose-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 26px, 30px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 34px);
+  }
+
+  &-w {
+    @include font(400, 18px, 21px);
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    @media screen and (min-width: 768px) {
+      @include font(400, 26px, 30px);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(400, 30px, 34px);
+    }
+  }
+}
