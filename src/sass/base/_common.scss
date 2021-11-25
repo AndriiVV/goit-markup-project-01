@@ -48,3 +48,99 @@ body {
     }
   }
 }
+
+.btn {
+  font-family: 'DM Sanf', sans-serif;
+  font-style: normal;
+  @include font(400, 8px, 10px);
+  padding: 0px 12px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 24px;
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 14px, 18px);
+    padding: 0px 20px;
+    border-radius: 20px;
+    height: 40px;
+  }
+
+  &-icon__light {
+    margin-left: 14px;
+    fill: var(--main-red-color);
+    // stroke: var(--main-red-color);
+  }
+
+  &-icon__dark {
+    fill: var(--primary-white-color);
+    margin-left: 14px;
+    // stroke: var(--primary-white-color);
+  }
+
+  &__dark {
+    background-color: var(--main-red-color);
+    color: var(--primary-white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-dark-hover-color);
+    }
+  }
+
+  &__light {
+    background-color: var(--primary-white-color);
+    color: var(--main-red-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-light-hover-color);
+    }
+  }
+
+  &-big {
+    font-family: 'DM Sanf', sans-serif;
+    font-style: normal;
+    @include font(700, 16px, 21px);
+    padding: 0px 17px;
+    border: inherit;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 44px;
+
+    @media screen and (min-width: 768px) {
+      @include font(700, 16px, 21px);
+      padding: 0px 37px;
+      border-radius: 22px;
+      height: 44px;
+    }
+
+    &__dark {
+      background-color: var(--main-red-color);
+      color: var(--primary-white-color);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: var(--btn-dark-hover-color);
+      }
+    }
+
+    &__light {
+      background-color: var(--primary-white-color);
+      color: var(--main-red-color);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: var(--btn-light-hover-color);
+      }
+    }
+  }
+}
