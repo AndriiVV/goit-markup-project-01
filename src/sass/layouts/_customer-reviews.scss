@@ -61,7 +61,7 @@
   width: 32px;
   height: 4px;
   margin-top: 30px;
-  fill: red;
+  fill: #c7133e;
   margin-bottom: 18px;
 }
 
@@ -73,8 +73,8 @@
   background: unset;
   background-image: url(../images/reviews/icecream2.png);
   background-size: cover;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 40px;
 }
 
 .swiper-pagination-bullet-active {
@@ -87,9 +87,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  // <<<<<<< Updated upstream
+  // =======
+  .customer-reviews {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .customer-reviews__pic {
+    margin-bottom: 19px;
+  }
   .customer-reviews__disc {
     font-size: 16px;
   }
+  // >>>>>>> Stashed changes
   .customer-reviews__wrapper {
     padding-top: 47px;
     padding-bottom: 28px;
@@ -99,18 +110,29 @@
   }
   .customer-reviews__text {
     width: 100%;
-    font-size: 14px;
-    line-height: 2.16;
+    font-size: 16px;
+    line-height: 1.86;
     letter-spacing: 0.04em;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  // <<<<<<< Updated upstream
+  // =======
+  .customer-reviews {
+    position: relative;
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
+  .customer-reviews__pic {
+    margin-bottom: 15px;
+  }
   .customer-reviews__disc {
     font-size: 20px;
   }
+  // >>>>>>> Stashed changes
   .customer-reviews__wrapper {
     max-width: 926px;
     padding-top: 47px;
@@ -120,9 +142,6 @@
     background-position: top 32px left 50px, 100%;
   }
   .customer-reviews__text {
-    width: 100%;
-    font-size: 16px;
-    line-height: 1.86;
     padding-left: 28px;
     padding-right: 35px;
   }
