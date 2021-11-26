@@ -80,18 +80,49 @@
       </div>
     </div>
     <div class="contacts-buttons">
-      <button type="button" class="contacts-buttons__btn--red btn-big btn-big__dark">
+      <button
+        type="button"
+        class="contacts-button__btn--red btn-big btn-big__dark"
+        data-modal-contacts-open
+      >
         Our Locations
         <svg class="contacts__icon-white" width="8" height="10">
           <use href="./images/svg/icons.svg#icon-pointer-right"></use>
         </svg>
       </button>
-      <button type="button" class="contacts-button__btn--white btn-big btn-big__light">
+
+      <div class="backdrop-contacts is-hidden" data-modal-contacts>
+        <div class="modal-contacts">
+          <img class="modal-contacts__img" src="./images/map.png" alt="Map of location" />
+          <button type="reset" class="modal-contacts__close-btn" data-modal-contacts-close>
+            <svg class="modal-contacts-icon" width="12" height="12">
+              <use href="./images/svg/icons.svg#icon-house"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="contacts-button__btn--white btn-big btn-big__light"
+        data-modal-contacts-btn-open
+      >
         Franchise
         <svg class="contacts__icon-red" width="8" height="10">
           <use href="./images/svg/icons.svg#icon-pointer-right"></use>
         </svg>
       </button>
+
+      <div class="backdrop-contacts-btn is-hidden" data-modal-contacts-btn>
+        <div class="modal-contacts-btn">
+          <img class="modal-contacts__img" src="./images/map.png" alt="Map of location" />
+          <button type="reset" class="modal-contacts-btn__close-btn" data-modal-contacts-btn-close>
+            <svg class="modal-contacts-icon" width="15" height="15">
+              <use href="./images/svg/icons.svg#icon-house"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
