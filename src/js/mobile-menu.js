@@ -11,12 +11,12 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
   
   function toggleModal() {
-    refs.modal.classList.toggle('visually-hidden');
+    refs.modal.classList.toggle('mobile-menu_hidden');
   }
   
   jumpLinks.forEach(link => {
     link.addEventListener('click', event => {
-      refs.modal.classList.toggle('visually-hidden');
+      refs.modal.classList.toggle('mobile-menu_hidden');
    });
   });
   
