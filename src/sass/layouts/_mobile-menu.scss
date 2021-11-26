@@ -1,26 +1,35 @@
 .mobile-menu {
   top: 0;
+  right: 0;
   position: fixed;
   height: 100%;
-  width: 100%;
+  // width: 100%;
+  width: 250px;
   background-color: #e17992;
   padding: 60px 20px;
   z-index: 10;
 }
-// .mobile-menu__button-close {
-//     width: 14px;
-//     height: 14px;
-//     position: absolute;
-//     top: 23px;
-//     right: 28px;
-//     z-index: 11;
-//     border: none;
-//     background-color: transparent;}
+
+.mobile-menu__button-close {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  z-index: 11;
+  border: none;
+  background-color: transparent;
+}
+
 .mobile-menu__btn-icon {
-  fill: var(--primary-white-color);
+  // fill: var(--primary-white-color);
+  stroke: var(--primary-white-color);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
-    fill: var(--main-red-color);
+    // fill: var(--main-red-color);
+    stroke: var(--main-red-color);
   }
 }
 .mobile-menu__button {
