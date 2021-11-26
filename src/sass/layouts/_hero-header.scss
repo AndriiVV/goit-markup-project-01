@@ -191,74 +191,100 @@
   }
 }
 
-// .cafes-container {
-//   @media screen and (min-width: 320px) {
-//     display: none;
-//   }
-//   @media screen and (min-width: 768px) {
-//     position: absolute;
-//     top: 94px;
-//     right: 34px;
-//     left: 691px;
-//     display: flex;
-//     flex-direction: column;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     top: 156px;
-//     right: 97px;
-//     left: 1111px;
-//   }
-// }
+.cafes-container {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 100px;
+    right: 34px;
+    left: 705px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 156px;
+    right: 97px;
+    left: 1111px;
+  }
+}
 
-// .cafes-container__label {
-//   font-size: 28px;
-//   line-height: 1.14;
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-//   color: var(--main-red-color);
-//   text-align: left;
-// }
+.cafes-container__label {
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-red-color);
+  text-align: left;
+  &::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 25px;
+    z-index: -1;
+  }
+}
 
-// .cafes-container__descr {
-//   font-family: 'DM Sans';
-//   font-size: 8px;
-//   line-height: 1.25;
-//   color: var(--primary-white-color);
-//   text-align: center;
-// }
+.cafes-container__descr {
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--primary-white-color);
+  text-align: right;
+}
 
-// .trucks-container {
-//   @media screen and (min-width: 320px) {
-//     display: none;
-//   }
-//   @media screen and (min-width: 768px) {
-//     position: absolute;
-//     top: 151px;
-//     right: 34px;
-//     left: 683px;
-//     display: flex;
-//     flex-direction: column;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     top: 248px;
-//     right: 97px;
-//     left: 1091px;
-//   }
-// }
+.trucks-container {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 151px;
+    right: 19px;
+    left: 700px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 248px;
+    right: 97px;
+    left: 1091px;
+  }
+}
 
-// .trucks-container__label {
-//   font-size: 28px;
-//   line-height: 1.14;
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-//   color: var(--main-red-color);
-//   text-align: center;
-// }
+.trucks-container__label {
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-red-color);
+  text-align: center;
+  &::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 33px;
+    z-index: -1;
+  }
+}
 
-// .trucks-container__descr {
-//   font-family: 'DM Sans';
-//   font-size: 8px;
-//   line-height: 1.25;
-//   color: var(--primary-white-color);
-//   text-align: left;
-// }
+.trucks-container__descr {
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--primary-white-color);
+  text-align: left;
+}
