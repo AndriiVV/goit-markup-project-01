@@ -1,3 +1,106 @@
 .footer {
-  background-color: var(--background-header-color);
+  background-color: var(--background-about-color);
+  padding-top: 56px;
+  position: relative;
+
+  &__title {
+    margin-left: 0px;
+    margin-right: 46px;
+    margin-bottom: 43px;
+    max-width: 235px;
+
+    color: var(--main-red-color);
+    @include font(400, 34px, 39px);
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      max-width: 340px;
+      @include font(400, 48px, 55px, 0.06em);
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 500px;
+      @include font(400, 58px, 66px, 0.06em);
+    }
+
+    &::before {
+      content: 'Homemade ice cream made';
+      display: block;
+      margin-bottom: 17px;
+
+      color: var(--secondary-rose-color);
+      @include font(400, 18px, 21px);
+      text-transform: uppercase;
+
+      @media screen and (min-width: 768px) {
+        @include font(400, 26px, 30px);
+      }
+
+      @media screen and (min-width: 1280px) {
+        @include font(400, 30px, 34px);
+      }
+    }
+  }
+
+  &__socials {
+    text-align: right;
+    margin-bottom: 46px;
+  }
+
+  &__socials-list {
+    display: inline-flex;
+  }
+
+  &__socials-item {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--btn-socials-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+
+  &__socials-icon {
+    fill: var(--primary-white-color);
+  }
+
+  &__contacts {
+    font-family: 'DM Sans';
+    @include font(700, 12px, 22px);
+    text-align: right;
+    margin-bottom: 43px;
+
+    &-text {
+      color: var(--text-footer_dark-color);
+    }
+
+    &-tel {
+      color: var(--main-red-color);
+    }
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 89px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--fill-gray-color);
+  }
+
+  &__copyright {
+    font-family: 'DM Sans';
+    color: var(--primary-gray-color);
+    @include font(700, 14px, 21px);
+    width: 150px;
+
+    margin-top: 22px;
+    padding-bottom: 25px;
+    margin-left: 20%;
+  }
 }
