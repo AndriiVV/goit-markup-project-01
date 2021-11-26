@@ -1,6 +1,6 @@
 <!-- HEADER -->
 
-<header class="container page-header">
+<header class="page-header">
   <div class="header-container">
     <nav class="header__nav">
       <a href="./index.html" class="header__link">
@@ -93,24 +93,26 @@
       />
       <img src="./images/header-hero/ellipse-320-1x.png" alt="Эллипс" />
     </picture>
-    <div class="milk-container">
-      <picture class="hero__image--milk">
-        <source
-          srcset="
-            ./images/header-hero/milk-1200-1x.png 1x,
-            ./images/header-hero/milk-1200-2x.png 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./images/header-hero/milk-768-1x.png     1x,
-            ./images/header-hero/milk-768-2x.png.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <img src="./images/header-hero/milk-768-1x.png" alt="Кувшин с молоком" />
-      </picture>
+    <div class="main-milk-container">
+      <div class="milk-container">
+        <picture class="hero__image--milk">
+          <source
+            srcset="
+              ./images/header-hero/milk-1200-1x.png 1x,
+              ./images/header-hero/milk-1200-2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/header-hero/milk-768-1x.png     1x,
+              ./images/header-hero/milk-768-2x.png.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="./images/header-hero/milk-768-1x.png" alt="Кувшин с молоком" />
+        </picture>
+      </div>
       <div class="second-milk-container">
         <p class="hero__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -140,13 +142,13 @@
       />
       <img src="./images/header-hero/girl-768-1x.png" alt="Девушка с мороженным" />
     </picture>
-    <div class="cafes-container">
+    <!-- <div class="cafes-container">
       <span class="cafes-container__label">16</span>
       <p class="cafes-container__descr">cafes</p>
     </div>
     <div class="trucks-container">
       <span class="trucks-container__label">23</span>
       <p class="trucks-container__descr">food trucks</p>
-    </div>
+    </div> -->
   </section>
 </header>
