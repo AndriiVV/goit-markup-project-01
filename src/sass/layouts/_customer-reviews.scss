@@ -1,3 +1,120 @@
-.customer-review {
-  background-color: var(--background-orange-color);
+.customer-reviews {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 43px;
+}
+
+.swiper-slide {
+  margin-bottom: 21px;
+}
+
+.customer-reviews__pic {
+  margin-bottom: 29px;
+}
+.customer-reviews__img {
+  width: 85px;
+  height: 85px;
+}
+
+.customer-reviews__wrapper {
+  position: relative;
+  display: block;
+  // height: 308px;
+  width: 100%;
+  padding-top: 43px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url(../images/reviews/99.png), linear-gradient(to top, #fafafa, #fafafa);
+  background-size: 54px 40px, 100%;
+  background-position: top 28px left 61px, 100%;
+  background-repeat: no-repeat;
+}
+
+.customer-reviews__text {
+  width: 100%;
+  // height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 7px;
+  padding-right: 16px;
+  color: #000000;
+  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
+}
+
+.customer-reviews__disc {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+
+  color: #000000;
+}
+
+.three-point-small {
+  width: 32px;
+  height: 4px;
+  margin-top: 30px;
+  fill: red;
+  margin-bottom: 18px;
+}
+
+.swiper-pagination {
+  position: unset;
+}
+
+.swiper-pagination-bullet {
+  background: unset;
+  background-image: url(../images/reviews/icecream2.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background: unset;
+  background-image: url(../images/reviews/icecream1.png);
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__wrapper {
+    padding-top: 47px;
+    padding-bottom: 28px;
+    padding-left: 60px;
+    padding-right: 36px;
+    background-position: top 30px left 80px, 100%;
+  }
+  .customer-reviews__text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .customer-reviews__wrapper {
+    max-width: 926px;
+    padding-top: 47px;
+    padding-bottom: 39px;
+    padding-left: 59px;
+    padding-right: 54px;
+    background-position: top 32px left 50px, 100%;
+  }
+  .customer-reviews__text {
+    padding-left: 28px;
+    padding-right: 35px;
+  }
 }
