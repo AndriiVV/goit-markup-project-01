@@ -1,3 +1,184 @@
 .footer {
-  background-color: var(--background-header-color);
+  background-color: var(--background-about-color);
+  padding-top: 56px;
+
+  &_relative {
+    position: relative;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 79px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 82px;
+  }
+
+  &__title {
+    margin-left: 0px;
+    margin-right: 46px;
+    margin-bottom: 43px;
+    max-width: 235px;
+
+    color: var(--main-red-color);
+    @include font(400, 34px, 39px);
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      max-width: 340px;
+      @include font(400, 48px, 55px, 0.06em);
+      margin-bottom: 120px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 500px;
+      @include font(400, 58px, 66px, 0.06em);
+      margin-bottom: 106px;
+    }
+
+    &::before {
+      content: 'Homemade ice cream made';
+      display: block;
+      margin-bottom: 17px;
+
+      color: var(--secondary-rose-color);
+      @include font(400, 18px, 21px);
+      text-transform: uppercase;
+
+      @media screen and (min-width: 768px) {
+        @include font(400, 26px, 30px);
+      }
+
+      @media screen and (min-width: 1280px) {
+        @include font(400, 30px, 34px);
+      }
+    }
+  }
+
+  &__socials {
+    text-align: right;
+    margin-bottom: 46px;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__socials-list {
+    display: inline-flex;
+  }
+
+  &__socials-item {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--btn-socials-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 28px;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-right: 25px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--main-red-color);
+    }
+  }
+
+  &__socials-icon {
+    fill: var(--primary-white-color);
+  }
+
+  &__contacts {
+    font-family: 'DM Sans';
+    @include font(700, 12px, 22px);
+    text-align: right;
+    margin-bottom: 43px;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 84px;
+      right: 20px;
+      @include font(700, 14px, 26px);
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      // position: absolute;
+      // top: 84px;
+      // right: 20px;
+      @include font(700, 16px, 30px);
+      // margin-bottom: 0;
+    }
+
+    &-text {
+      color: var(--text-footer_dark-color);
+    }
+
+    &-tel {
+      color: var(--main-red-color);
+    }
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 89px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--fill-gray-color);
+
+    @media screen and (min-width: 480px) {
+      bottom: 73px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 45px;
+    }
+  }
+
+  &__copyright {
+    font-family: 'DM Sans';
+    color: var(--primary-gray-color);
+    @include font(700, 14px, 21px, 0.02em);
+    text-align: center;
+    width: 150px;
+
+    margin-top: 22px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+      @include font(700, 14px, 26px, 0.02em);
+      width: auto;
+
+      margin-top: 29px;
+      padding-bottom: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 9px;
+      padding-bottom: 8px;
+    }
+  }
 }
