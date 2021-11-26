@@ -24,7 +24,7 @@
     margin-bottom: 50px;
   }
 }
-.about-img__item {
+.about-img-wrapp {
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -147,5 +147,24 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+  }
+}
+.about {
+  background-image: url(../images/about/milk-wave-320-1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 92%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/milk-wave-320-2x.png);
+  }
+  @media screen and (min-width: 769px) {
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about/milk-wave-1200-1x.png);
+    background-position: 50% 120%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-wave-1200-1x.png);
+    }
   }
 }
