@@ -1,0 +1,33 @@
+.scroll__up__button {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: var(--main-red-color);
+    color: var(--primary-white-color);
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+    
+  &:hover {
+    background: var(--background-green-color);
+    color: var(--main-red-color);
+  }}
+  
+  .scroll__up__button-show {
+    display: block;
+  }
+
+  @media screen and (min-width:1280px) {
+    .scroll__up__button {
+        
+        bottom: 80px;
+        right: 80px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        }}
