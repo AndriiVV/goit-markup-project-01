@@ -3,12 +3,17 @@
   right: 0;
   position: fixed;
   height: 100%;
-  // width: 100%;
   width: 250px;
   background-color: #e17992;
   padding: 60px 20px;
   z-index: 10;
-}
+  transition: right ease 1.5s;
+  }
+
+  .mobile-menu_hidden{
+transition: right ease 2s;
+right: -500px;
+  }
 
 .mobile-menu__button-close {
   width: 14px;
@@ -53,3 +58,4 @@
     color: var(--main-red-color);
   }
 }
+
