@@ -20,12 +20,14 @@
           <img src="./images/logo/logo-320-1x.png" alt="Лого" />
         </picture>
       </a>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">How it’s made?</a></li>
-        <li><a href="">Our products</a></li>
-        <li><a href="">Contact</a></li>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="./index.html" class="nav__link nav__link--current">Home</a>
+        </li>
+        <li class="nav__item"><a href="#aboutus" class="nav__link">About us</a></li>
+        <li class="nav__item"><a href="#howit'smade" class="nav__link">How it’s made?</a></li>
+        <li class="nav__item"><a href="#ourproducts" class="nav__link">Our products</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </nav>
     <div class="button-container">
@@ -46,9 +48,11 @@
     <div class="hero-container">
       <h1 class="hero__title">ice cream made with <span class="hero__label">passion</span></h1>
       <ul class="hero__list">
-        <li class="hero__item"><button type="button" class="btn btn__dark">Products</button></li>
         <li class="hero__item">
-          <button type="button" class="btn btn__light">How it’s made?</button>
+          <a href="#products" class="btn btn__dark">Products</a>
+        </li>
+        <li class="hero__item">
+          <a href="#howit'smade" class="btn btn__light">How it’s made?</a>
         </li>
       </ul>
     </div>
@@ -134,7 +138,7 @@
           ut labore et
         </p>
         <button class="hero__button">
-          <svg class="arrow-right" width="6px" height="11px">
+          <svg class="arrow--right">
             <use href="./images/svg/icons.svg#icon-arrow-right"></use>
           </svg>
         </button>
