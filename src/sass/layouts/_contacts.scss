@@ -1,20 +1,35 @@
 .contacts {
   padding-top: 43px;
   padding-bottom: 56px;
-  // background-color: var(--background-contacts-color);
   background: linear-gradient(
     to bottom,
     var(--primary-white-color) 10.5%,
     var(--background-about-color) 10.5%,
     var(--background-about-color) 89%
   );
+
   @media screen and(min-width:768px) {
+    padding-top: 60px;
+    padding-bottom: 83px;
     background: linear-gradient(
       to bottom,
       var(--primary-white-color) 21%,
       var(--background-about-color) 21%,
       var(--background-about-color) 79%
     );
+  }
+  @media screen and(min-width:1280px) {
+    padding-top: 66px;
+    padding-bottom: 83px;
+    background-image: url(../images/contacts/spots-1280-1x.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    // @media (min-device-pixel-ratio: 2),
+    //   (-webkit-min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: url(../images/contacts/spots-1280-2x.png);
+    // }
   }
 }
 .contacts__title {
@@ -73,7 +88,10 @@
 }
 .contacts__box-info {
   width: 179px;
-  margin-top: 25px;
+
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
 
   &:after {
     content: '';
@@ -168,7 +186,7 @@
 }
 .contacts__text--red {
   line-height: 1.86;
-  color: var(--main-red-color);
+  color: var(--secondary-rose-color);
   margin-bottom: 10px;
   @media screen and(min-width:768px) {
     font-size: 14px;
@@ -204,13 +222,16 @@
   flex-direction: column;
 }
 .contacts-buttons {
+  display: flex;
+  flex-direction: column;
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    flex-direction: row;
   }
 }
-.contacts-buttons__btn--red {
+.contacts-button__btn--red {
   margin: 0 auto;
   @media screen and(min-width:768px) {
     margin: 0;
@@ -220,6 +241,7 @@
 .contacts-button__btn--white {
   margin: 0 auto;
   margin-top: 10px;
+  background-color: var(--primary-white-color);
   @media screen and(min-width:768px) {
     margin: 0;
   }
@@ -231,4 +253,125 @@
 .contacts__icon-red {
   margin-left: 13px;
   fill: var(--main-red-color);
+}
+.backdrop-contacts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
+}
+.backdrop-contacts.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(2);
+}
+
+.modal-contacts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 300px;
+  min-width: 300px;
+  background-color: var(--background-about-color);
+  width: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+  @media screen and(min-width:768px) {
+    min-width: 650px;
+  }
+  @media screen and(min-width:1280px) {
+    min-width: 900px;
+  }
+}
+.modal-contacts-icon {
+  fill: var(--primary-gray-color);
+  &:hover {
+    fill: var(--main-red-color);
+  }
+}
+.modal-contacts__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-white-color);
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-contacts-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
+}
+.backdrop-contacts-btn.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(2);
+}
+
+.modal-contacts-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 300px;
+  min-width: 300px;
+  background-color: var(--background-about-color);
+  width: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+  @media screen and(min-width:768px) {
+    min-width: 650px;
+  }
+  @media screen and(min-width:1280px) {
+    min-width: 900px;
+  }
+}
+.modal-contacts-icon {
+  fill: var(--primary-gray-color);
+  &:hover {
+    fill: var(--main-red-color);
+  }
+}
+.modal-contacts-btn__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-white-color);
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-contacts__img {
+  max-width: 1000px;
+  position: relative;
+  left: -230px;
+  @media screen and(min-width:768px) {
+    max-width: 100%;
+    left: 0;
+  }
 }
