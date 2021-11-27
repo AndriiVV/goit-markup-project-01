@@ -1,165 +1,167 @@
 <!-- HEADER -->
 
-<header class="page-header" id="hero-header">
-  <div class="header-container">
-    <nav class="header__nav">
-      <a href="./index.html" class="header__link">
-        <picture>
-          <source
-            srcset="./images/logo/logo-1200-1x.png 1x, ./images/logo/logo-1200-2x.png 2x"
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="./images/logo/logo-720-1x.png 1x, ./images/logo/logo-720-2x.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/logo/logo-320-1x.png 1x, ./images/logo/logo-320-2x.png 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/logo/logo-320-1x.png" alt="Лого" />
-        </picture>
-      </a>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="./index.html" class="nav__link nav__link--current">Home</a>
-        </li>
-        <li class="nav__item"><a href="#contacts" class="nav__link">About us</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">How it’s made?</a></li>
-        <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
-        <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="button-container">
-      <button class="menu-open" data-modal-open>
-        <svg width="20" height="15">
-          <use href="./images/svg/icons.svg#icon-Burger"></use>
-        </svg>
-      </button>
-      <button type="button" class="btn-big btn-big__light btn-big__hidden">
-        Buy now
-        <svg width="11" height="11" class="btn-icon__light">
-          <use href="./images/svg/icons.svg#icon-pointer-right"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <section class="hero">
-    <div class="hero-container">
-      <h1 class="hero__title">ice cream made with <span class="hero__label">passion</span></h1>
-      <ul class="hero__list">
-        <li class="hero__item">
-          <a href="#products" class="btn btn__dark">Products</a>
-        </li>
-        <li class="hero__item">
-          <a href="#about" class="btn btn__light">How it’s made?</a>
-        </li>
-      </ul>
-    </div>
-    <div class="cafes-container">
-      <span class="cafes-container__label">16</span>
-      <p class="cafes-container__descr">cafes</p>
-    </div>
-    <div class="trucks-container">
-      <span class="trucks-container__label">23</span>
-      <p class="trucks-container__descr">food trucks</p>
-    </div>
-    <picture class="hero__image--icecream">
-      <source
-        srcset="
-          ./images/header-hero/ice-cream-1200-1x.png 1x,
-          ./images/header-hero/ice-cream-1200-2x.png 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./images/header-hero/ice-cream-768-1x.png     1x,
-          ./images/header-hero/ice-cream-768-2x.png.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/header-hero/ice-cream-320-1x.png 1x,
-          ./images/header-hero/ice-cream-320-2x.png 2x
-        "
-        media="(min-width: 320px)"
-      />
-      <img src="./images/header-hero/ice-cream-320-1x.png" alt="Мороженное" />
-    </picture>
-    <picture class="hero__image--ellipse">
-      <source
-        srcset="
-          ./images/header-hero/ellipse-1200-1x.png 1x,
-          ./images/header-hero/ellipse-1200-2x.png 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./images/header-hero/ellipse-768-1x.png 1x,
-          ./images/header-hero/ellipse-768-2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/header-hero/ellipse-320-1x.png 1x,
-          ./images/header-hero/ellipse-320-2x.png 2x
-        "
-        media="(min-width: 320px)"
-      />
-      <img src="./images/header-hero/ellipse-320-1x.png" alt="Эллипс" />
-    </picture>
-    <div class="main-milk-container">
-      <div class="milk-container">
-        <picture class="hero__image--milk">
-          <source
-            srcset="
-              ./images/header-hero/milk-1200-1x.png 1x,
-              ./images/header-hero/milk-1200-2x.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./images/header-hero/milk-768-1x.png     1x,
-              ./images/header-hero/milk-768-2x.png.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <img src="./images/header-hero/milk-768-1x.png" alt="Кувшин с молоком" />
-        </picture>
-      </div>
-      <div class="second-milk-container">
-        <p class="hero__descr">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
-        </p>
-        <button class="hero__button">
-          <svg class="arrow--right">
-            <use href="./images/svg/icons.svg#icon-arrow-right"></use>
+<header class="hero-header" id="hero-header">
+  <div class="container page-header">
+    <div class="header-container">
+      <nav class="header__nav">
+        <a href="./index.html" class="header__link">
+          <picture>
+            <source
+              srcset="./images/logo/logo-1200-1x.png 1x, ./images/logo/logo-1200-2x.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./images/logo/logo-720-1x.png 1x, ./images/logo/logo-720-2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/logo/logo-320-1x.png 1x, ./images/logo/logo-320-2x.png 2x"
+              media="(min-width: 320px)"
+            />
+            <img src="./images/logo/logo-320-1x.png" alt="Лого" />
+          </picture>
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link nav__link--current">Home</a>
+          </li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">How it’s made?</a></li>
+          <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="button-container">
+        <button class="menu-open" data-modal-open>
+          <svg width="20" height="15">
+            <use href="./images/svg/icons.svg#icon-Burger"></use>
+          </svg>
+        </button>
+        <button type="button" class="btn-big btn-big__light btn-big__hidden">
+          Buy now
+          <svg width="11" height="11" class="btn-icon__light">
+            <use href="./images/svg/icons.svg#icon-pointer-right"></use>
           </svg>
         </button>
       </div>
     </div>
-    <picture class="hero__image--girl">
-      <source
-        srcset="
-          ./images/header-hero/girl-1200-1x.png     1x,
-          ./images/header-hero/girl-1200-2x.png.png 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./images/header-hero/girl-768-1x.png     1x,
-          ./images/header-hero/girl-768-1x.png.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img src="./images/header-hero/girl-768-1x.png" alt="Девушка с мороженным" />
-    </picture>
-  </section>
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="hero__title">ice cream made with <span class="hero__label">passion</span></h1>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <a href="#products" class="btn btn__dark">Products</a>
+          </li>
+          <li class="hero__item">
+            <a href="#about" class="btn btn__light">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cafes-container">
+        <span class="cafes-container__label">16</span>
+        <p class="cafes-container__descr">cafes</p>
+      </div>
+      <div class="trucks-container">
+        <span class="trucks-container__label">23</span>
+        <p class="trucks-container__descr">food trucks</p>
+      </div>
+      <picture class="hero__image--icecream">
+        <source
+          srcset="
+            ./images/header-hero/ice-cream-1200-1x.png 1x,
+            ./images/header-hero/ice-cream-1200-2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/header-hero/ice-cream-768-1x.png     1x,
+            ./images/header-hero/ice-cream-768-2x.png.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/header-hero/ice-cream-320-1x.png 1x,
+            ./images/header-hero/ice-cream-320-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/header-hero/ice-cream-320-1x.png" alt="Мороженное" />
+      </picture>
+      <picture class="hero__image--ellipse">
+        <source
+          srcset="
+            ./images/header-hero/ellipse-1200-1x.png 1x,
+            ./images/header-hero/ellipse-1200-2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/header-hero/ellipse-768-1x.png 1x,
+            ./images/header-hero/ellipse-768-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/header-hero/ellipse-320-1x.png 1x,
+            ./images/header-hero/ellipse-320-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/header-hero/ellipse-320-1x.png" alt="Эллипс" />
+      </picture>
+      <div class="main-milk-container">
+        <div class="milk-container">
+          <picture class="hero__image--milk">
+            <source
+              srcset="
+                ./images/header-hero/milk-1200-1x.png 1x,
+                ./images/header-hero/milk-1200-2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/header-hero/milk-768-1x.png     1x,
+                ./images/header-hero/milk-768-2x.png.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img src="./images/header-hero/milk-768-1x.png" alt="Кувшин с молоком" />
+          </picture>
+        </div>
+        <div class="second-milk-container">
+          <p class="hero__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero__button">
+            <svg class="arrow--right">
+              <use href="./images/svg/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <picture class="hero__image--girl">
+        <source
+          srcset="
+            ./images/header-hero/girl-1200-1x.png     1x,
+            ./images/header-hero/girl-1200-2x.png.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/header-hero/girl-768-1x.png     1x,
+            ./images/header-hero/girl-768-1x.png.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/header-hero/girl-768-1x.png" alt="Девушка с мороженным" />
+      </picture>
+    </section>
+  </div>
 </header>
