@@ -5,7 +5,7 @@
     modal: document.querySelector('[data-modal]'),
   };
 
-  const jumpLinks = document.querySelectorAll("a[href^='#']");
+  const jumpLinks = document.querySelectorAll("a.mobile-menu__link[href^='#']");
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
