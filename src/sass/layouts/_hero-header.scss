@@ -50,6 +50,9 @@
   }
 }
 
+.nav__item {
+}
+
 .nav__item:not(:last-child) {
   margin-right: 35px;
 }
@@ -180,7 +183,7 @@
   z-index: 1;
   top: 92px;
   right: 32px;
-  left: 117px;
+  // left: 117px;
   @media screen and (min-width: 768px) {
     z-index: 2;
     top: 63px;
@@ -200,7 +203,7 @@
   position: absolute;
   z-index: 0;
   top: 83px;
-  left: 36px;
+  // left: 36px;
   right: 0;
   @media screen and (min-width: 768px) {
     top: 31px;
