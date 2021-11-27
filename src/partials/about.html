@@ -1,47 +1,76 @@
-
-    <section class="about" id="about">
-        <div class="container about-container">
-            <label class="about-section-text small-title">tradition and love</label>
-            <h2 class="about-section-title title">how it’s made?</h2>
-            <div class="about-wrapp">
-                    <div class="about-img-wrapp cow-img-item">
-                        <picture>
-                            <source srcset="./images/about/cow-mob-1.png 1x,
-                                            ./images/about/cow-mob-2.png 2x" media="(min-width: 320px)" />
-                            <source srcset="./images/about/cow-tab-1.png 1x,
-                                            ./images/about/cow-tab-2.png 2x" media="(min-width: 768px)" />
-                            <source srcset="./images/about/cow-desk-1.png 1x,
-                                            ./images/about/cow-desk-2.png 2x" media="(min-width: 1280px)" />
-                            <img class="about-img__image cow-img" src="./images/about/cow-mob-1.png" alt="cow">
-                        </picture>
-                    </div>
-                <div class=" about-text-wrapp">
-                    <ul class="about-list">
-                        <li class="about-list__item">
-                            <p class="about-list__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-                        cursus,
-                        faucibus lorem eget, egestas
-                        eros.
-                        Maecenas eleifend erat at justo fringilla.</p>
-                        </li>
-                        <li class="about-list__item">
-                            <p class="about-list__info">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
-                        rhoncus
-                        orci in imperdiet
-                        placerat.
-                        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-                        tincidunt.
-                        <span class="about-list__part">Aliquam erat volutpat. Aenean accumsan.</span></p>
-                        </li>
-                    </ul>
-                    <div class="btn-wrapp">
-                        <button class="btn-big btn-big__light about-btn" type="button">Read more 
-                            <svg class="icon-details" width="10px" height="12px">
-                                <use href="./images/svg/icons.svg#icon-pointer-right"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+<section class="about" id="about">
+  <div class="container about-container">
+    <label class="about-section-text small-title">tradition and love</label>
+    <h2 class="about-section-title title">how it’s made?</h2>
+    <div class="about-wrapp">
+      <div class="about-img-wrapp cow-img-item">
+        <picture>
+          <source
+            srcset="./images/about/cow-mob-1.png 1x, ./images/about/cow-mob-2.png 2x"
+            media="(min-width: 320px)"
+          />
+          <source
+            srcset="./images/about/cow-tab-1.png 1x, ./images/about/cow-tab-2.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/about/cow-desk-1.png 1x, ./images/about/cow-desk-2.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <img class="about-img__image cow-img" src="./images/about/cow-mob-1.png" alt="cow" />
+        </picture>
+      </div>
+      <div class="about-text-wrapp">
+        <ul class="about-list">
+          <li class="about-list__item">
+            <p class="about-list__text">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+              faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </p>
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__info">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+              orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
+              feugiat urna maximus. Cras massa nibh, tincidunt.
+              <span class="about-list__part">Aliquam erat volutpat. Aenean accumsan.</span>
+            </p>
+          </li>
+        </ul>
+        <div class="btn-wrapp">
+          <button
+            class="btn-big btn-big__light about-btn cursor-ice"
+            type="button"
+            data-modal-about-open
+          >
+            Read more
+            <svg class="icon-details" width="10px" height="12px">
+              <use href="./images/svg/icons.svg#icon-pointer-right"></use>
+            </svg>
+          </button>
+          <div class="backdrop-about is-hidden" data-modal-about>
+            <div class="modal-about">
+              <div class="modal-about__text">
+                <p class="modal-about__description">
+                  Ice cream, frozen dairy food made from cream or butterfat, milk, sugar, and
+                  flavourings. Frozen custard and French-type ice creams also contain eggs. Hundreds
+                  of flavours have been devised, the most popular being vanilla, chocolate, and
+                  strawberry. Iced desserts were introduced into Europe from the East. Marco Polo
+                  brought back descriptions of fruit ices from his travels in China. Italian cooks
+                  developed recipes and techniques for making both water and milk ices; Buontalenti,
+                  one of the cooks taken to France by Catherine de Medici, first prepared such
+                  treats for the French court.
+                </p>
+              </div>
+              <button type="reset" class="modal-about__close-btn cursor-ice" data-modal-about-close>
+                <svg class="modal-about-icon" width="15" height="15">
+                  <use href="./images/svg/icons.svg#icon-house"></use>
+                </svg>
+              </button>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
