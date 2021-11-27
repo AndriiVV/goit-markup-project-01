@@ -21,15 +21,15 @@
   @media screen and(min-width:1280px) {
     padding-top: 66px;
     padding-bottom: 83px;
-    background-image: url(../images/contacts/spots-1280-1x.png);
+    background-image: url(../images/contacts/spots-1280-1x.png),
+      linear-gradient(
+        to bottom,
+        var(--primary-white-color) 21%,
+        var(--background-about-color) 21%,
+        var(--background-about-color) 79%
+      );
     background-repeat: no-repeat;
     background-position-y: center;
-    // @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: url(../images/contacts/spots-1280-2x.png);
-    // }
   }
 }
 .contacts__title {
@@ -366,12 +366,21 @@
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-contacts__img {
-  max-width: 1000px;
-  position: relative;
-  left: -230px;
+
+.map {
+  padding-bottom: 56.25%;
+
   @media screen and(min-width:768px) {
-    max-width: 100%;
-    left: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
   }
+}
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
