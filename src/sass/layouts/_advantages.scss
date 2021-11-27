@@ -1,16 +1,22 @@
 .advantages {
   background-color: var(--background-about-color);
-  padding-top: 40px;
+  padding-top: 105px;
   padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 70px;
+    padding-top: 150px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+  }
 }
-
 .advantages-title {
   display: none;
 }
 .advantages-list__item {
   padding-right: 70px;
   &:not(:last-child) {
-    margin-bottom: 38px;
+    margin-bottom: 104px;
   }
   @media screen and (min-width: 768px) {
     padding-right: 0px;
@@ -33,7 +39,8 @@
     margin-bottom: 40px;
   }
 }
-.advantages-list_info {
+.advantages-list__info {
+  position: relative;
   color: var(--main-red-color);
   font-family: Titan One;
   @include font(400, 36px, 41px);
@@ -47,7 +54,7 @@
   }
 }
 
-.advantages-list_text {
+.advantages-list__text {
   font-family: DM Sans, sans-serif;
   color: var(--primary-black-color);
   @include font(700, 12px, 20px, 0.02em);
@@ -62,5 +69,59 @@
 .advantages-list {
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+}
+
+.advantages-list__info-before-glass {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    width: 33px;
+    height: 50px;
+    background-image: url(..//images/advantages/advantages-1-320-1x.png);
+    background-size: 33px 50px;
+    @media screen and (min-width: 768px) {
+      bottom: 85px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: 105px;
+    }
+  }
+}
+
+.advantages-list__info-before-apple {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    width: 50px;
+    height: 50px;
+    background-image: url(..//images/advantages/advantages-2-320-1x.png);
+    background-size: 50px 50px;
+    @media screen and (min-width: 768px) {
+      bottom: 85px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: 105px;
+    }
+  }
+}
+
+.advantages-list__info-before-heart {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    width: 44px;
+    height: 50px;
+    background-image: url(..//images/advantages/advantages-3-320-1x.png);
+    background-size: 44px 50px;
+    @media screen and (min-width: 768px) {
+      bottom: 85px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: 105px;
+    }
   }
 }
