@@ -5,6 +5,7 @@
 .page-header {
   position: relative;
   padding-top: 6px;
+  overflow: hidden;
   @media screen and (min-width: 480px) {
     width: 480px;
     padding-left: 20px;
@@ -182,8 +183,7 @@
   position: absolute;
   z-index: 1;
   top: 92px;
-  right: 32px;
-  // left: 117px;
+  right: calc(45% - 112px);
   @media screen and (min-width: 768px) {
     z-index: 2;
     top: 63px;
@@ -203,8 +203,7 @@
   position: absolute;
   z-index: 0;
   top: 83px;
-  // left: 36px;
-  right: 0;
+  right: calc(45% - 206px);
   @media screen and (min-width: 768px) {
     top: 31px;
     right: 137px;
@@ -369,7 +368,6 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 151px;
-    // right: 19px;
     left: 700px;
     display: flex;
     flex-direction: column;
@@ -377,7 +375,6 @@
   }
   @media screen and (min-width: 1280px) {
     top: 248px;
-    // right: 97px;
     left: 1091px;
   }
 }
