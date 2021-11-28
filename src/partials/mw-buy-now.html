@@ -1,50 +1,59 @@
 <div id="modal-1" class="modal">
     <div class="wrapper container mw-buy-now__thumb">
+      <!-- <button type="button" class="mw-buy-now__close-btn" data-modal-close> -->
+        <svg class="mw-buy-now__close-btn-icon" width="25px" height="25px">
+          <use href="./images/svg/icons.svg#icon-close"></use>
+        </svg>
+      </button>
       <h2 class="mw-buy-now__title">Thank you for choosing <div class="mw-buy-now__title_white"> the best ice cream</div>
          in the world!</h2>
-      <!-- <div class="mw-buy-now__logo"></div> -->
+      <div class="mw-buy-now__logo"></div>
+      <p class="mw-buy-now__options__text">Choose a color:</p>
     <div class="mw-buy-now__options_colors">
-        <label class="options_colors-white">
+            <div>
+              <label class="options_colors-white">
             <input type="radio" name="color" value="white">
             <img src="./images/mw-buy-now/top-ice-cream-white.png">
           </label>
+          <img class="options_colors_conus" src="./images/mw-buy-now/conus-ice-cream-big.png">
+
+        </div>
+        <div >
            <label>
             <input type="radio" name="color" value="yellow">
             <img src="./images/mw-buy-now/top-ice-cream-yellow.png">
           </label>
+          <img class="options_colors_conus" src="./images/mw-buy-now/conus-ice-cream-big.png">
+        </div>
+        <div >
           <label>
             <input type="radio" name="color" value="mint">
             <img src="./images/mw-buy-now/top-ice-cream-mint.png">
           </label>
+          <img class="options_colors_conus" src="./images/mw-buy-now/conus-ice-cream-big.png">
+
+        </div>
     </div>
-    <div class="mw-buy-now__options_conus">
-        <div class="options_colors_conus-white">
-            <img src="./images/mw-buy-now/conus-ice-cream-big.png">
-          </div>
-          <div class="options_colors_conus">
-            <img src="./images/mw-buy-now/conus-ice-cream-big.png">
-          </div>
-          <div class="options_colors_conus">
-            <img src="./images/mw-buy-now/conus-ice-cream-big.png">
-          </div>
+    <div class="options_quantity_and_tel">
+      <span>
+      <label class="options_quantity" for="quantity">Write a quantity:</label>
+<input class="quantity" type="number" id="quantity" name="quantity"
+       min="1" max="100">
+      </span>
+      <span>
+       <label class="options_tel" for="user-tel">Your phone:</label>
+      
+      
+      <input
+              class="user-tel"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+            />
+          </span>       
     </div>
-        <!-- <picture class="">
-          <source
-            srcset="./images/logo/logo-1200-1x.png 1x, ./images/logo/logo-1200-2x.png 2x"
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="./images/logo/logo-720-1x.png 1x, ./images/logo/logo-720-2x.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/logo/logo-320-1x.png 1x, ./images/logo/logo-320-2x.png 2x"
-            media="(min-width: 320px)"
-          />
-          <img src="./images/logo/logo-320-1x.png" alt="Лого" />
-        </picture> -->
-    <!-- </div> -->
-    </div>
+    <button class="mw-buy-now__submit-button btn btn-big btn-big__dark" type="submit">Confirm</button>
+        </div>
   </div>
   <script src="https://production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
   <script >

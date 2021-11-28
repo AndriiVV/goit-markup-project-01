@@ -1,6 +1,6 @@
  /* Ripple Modal Styles */
  .modal {
-    background: #fff;
+    background: var(--primary-white-color);
     height: 100%;
     left: 0;
     opacity: 0;
@@ -159,7 +159,7 @@
   }
   
   .modal {
-    background: var(--secondary-rose-color);
+    background: var(--primary-white-color);
   }
 
   .modal .close {
@@ -182,55 +182,152 @@
   }
 
   .mw-buy-now__thumb {
-      padding: 40px 60px;
-      display: flex;
-      justify-content: center;
-    flex-wrap: wrap;
+      padding: 20px 20px;
+      background: var(--secondary-rose-color);
+      height: 100%;
   }
 
   .mw-buy-now__title {
     @extend .title;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 35px;
   }
 
   .mw-buy-now__title_white {
       color: var(--primary-white-color);
   }
 
-//   .mw-buy-now__logo{
-//       width: 199px;
-//       height: 50px;
-//       background-image: url('../images/logo/logo-1200-1x.png');
-//   background-size: 199px 50px;
-//   margin-bottom: 30px;
-//   }
+  .mw-buy-now__logo{
+      width: 199px;
+      height: 50px;
+      background-image: url('../images/logo/logo-1200-1x.png');
+  background-size: 199px 50px;
+  margin: 0 auto;
+  }
 
   .mw-buy-now__options_colors {
       display: flex;
+      justify-content: center;
   }
 
-  .mw-buy-now__options_conus {
+  .options_colors_conus {
+    margin-top: -35px;
+  }
+
+  .mw-buy-now__options__text, 
+  .options_quantity, 
+  .options_tel {
+    font-family: DM Sans, sans-serif;
+    text-align: center;
+    color: var(--primary-white-color);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .quantity, .user-tel {
+    border: none;
+    border-radius: 8px;
+    font-family: DM Sans, sans-serif;
+    color: var(--main-red-color);
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  .options_quantity_and_tel{
     display: flex;
-      margin-top: -38px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: -20px;
+    span {
+      margin-right: 20px;
+    }
   }
 
-  
-// .options_colors_conus-white {
-//     opacity: 0;}
+  .mw-buy-now__submit-button{
+    margin: 0 auto;
+  }
 
+// .mw-buy-now__close-btn-icon {
+// stroke: var(--main-red-color);
+// }
 
+// .mw-buy-now__close-btn {
+//   border: none;
+//   border-radius: 50%;
+//   background-color: var(--primary-white-color);
+// }
 
+.modal .close:before {
+  content: "X";
+  color: var(--main-red-color);
+  position: absolute;
+  left: 35px;
+  font-size: 15px;
+  }
 
+  @media screen and (min-width: 480px) {
+    .modal .close:before {
+      left: 15px;}
+  }
 
+  @media screen and (min-width: 510px) {
+    .modal .close:before {
+      left: -10px;}
+  }
 
-//   .options_colors-white:hover + .options_colors_conus-white {
-//         opacity: 1;
-//       }
-  
+  @media screen and (min-width: 550px) {
+    .modal .close:before {
+      left: -20px;}
+  }
+
+  @media screen and (min-width: 580px) {
+    .modal .close:before {
+      left: -35px;}
+  }
+  @media screen and (min-width: 610px) {
+    .modal .close:before {
+      left: -50px;}
+  }
+
+  @media screen and (min-width: 630px) {
+    .modal .close:before {
+      left: -70px;}
+  }
+  @media screen and (min-width: 650px) {
+    .modal .close:before {
+      left: -80px;}
+  }
+  @media screen and (min-width: 690px) {
+    .modal .close:before {
+      left: -100px;}
+  }
+
+  @media screen and (min-width: 730px) {
+    .modal .close:before {
+      left: -120px;}
+  }
+
+  @media screen and (min-width: 750px) {
+    .modal .close:before {
+      left: -140px;}
+  }
+
+  @media screen and (min-width: 768px) {
+    .modal .close:before {
+    font-size: 25px;
+    left: 10px;}
+  }
+
+  @media screen and (min-width: 1280px) {
+    .modal .close:before {
+    left: -75px;
+    font-size: 40px;}
+  }
 
  /* HIDE RADIO */
- .mw-buy-now__thumb {
+.mw-buy-now__thumb {
 [type=radio] { 
     position: absolute;
     opacity: 0;
@@ -245,11 +342,12 @@
   
   /* CHECKED STYLES */
   [type=radio]:checked + img {
-    border: 2px solid #f00;
+    border: 2px solid var(--main-red-color);
     border-radius: 50%;
     
   }
- }
+
+}
   
 
 //   .modal .wrapper {
