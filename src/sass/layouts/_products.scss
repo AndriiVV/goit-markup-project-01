@@ -63,8 +63,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  // width: 200px;
-  height: 124px;
+  overflow: hidden;
+  max-width: 200px;
+  max-height: 124px;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
@@ -123,6 +124,68 @@
   }
 }
 
+.products__preview::after {
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -45%);
+}
+
+.text-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  overflow: auto;
+  max-width: 200px;
+  max-height: 124px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: black;
+  // background-color: ;
+  margin-top: 30px;
+  transform: translateX(-110%);
+  transition: transform 250ms;
+
+  &.shown {
+    transform: translateX(40%);
+
+    & ~ .products__text {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  &:hover::-webkit-scrollbar,
+  &:focus::-webkit-scrollbar {
+    background-color: #eba0a06e;
+    width: 4px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb,
+  &:focus::-webkit-scrollbar-thumb {
+    background-color: green;
+  }
+}
+
 @media screen and (min-width: 480px) {
 }
 
@@ -168,6 +231,12 @@
       background-image: url(../images/products/milk-sheak-768-1x.png);
     }
   }
+
+  .text-overlay {
+    &.shown {
+      transform: translateX(0);
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -211,6 +280,11 @@
   .products__milkshakes {
     &::before {
       background-image: url(../images/products/milk-sheak-1200-1x.png);
+    }
+  }
+  .text-overlay {
+    &.shown {
+      transform: translateX(10%);
     }
   }
 }
