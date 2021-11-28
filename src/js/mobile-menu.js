@@ -12,11 +12,13 @@
   
   function toggleModal() {
     refs.modal.classList.toggle('mobile-menu_hidden');
+    document.body.classList.toggle('noscroll');
   }
   
   jumpLinks.forEach(link => {
     link.addEventListener('click', event => {
       refs.modal.classList.toggle('mobile-menu_hidden');
+      document.body.classList.toggle('noscroll');
    });
   });
   
