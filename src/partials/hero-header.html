@@ -1,55 +1,57 @@
-<!-- HEADER -->
-
-<header class="hero-header" id="hero-header">
-  <div class="container page-header">
-    <div class="header-container">
-      <nav class="header__nav">
-        <a href="./index.html" class="header__link cursor-ice">
-          <picture>
-            <source
-              srcset="./images/logo/logo-1200-1x.png 1x, ./images/logo/logo-1200-2x.png 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="./images/logo/logo-720-1x.png 1x, ./images/logo/logo-720-2x.png 2x"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="./images/logo/logo-320-1x.png 1x, ./images/logo/logo-320-2x.png 2x"
-              media="(min-width: 320px)"
-            />
-            <img src="./images/logo/logo-320-1x.png" alt="Лого" />
-          </picture>
-        </a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="./index.html" class="nav__link nav__link--current cursor-ice">Home</a>
-          </li>
-          <li class="nav__item"><a href="#contacts" class="nav__link cursor-ice">About us</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link cursor-ice">How it’s made?</a>
-          </li>
-          <li class="nav__item">
-            <a href="#products" class="nav__link cursor-ice">Our products</a>
-          </li>
-          <li class="nav__item"><a href="#footer" class="nav__link cursor-ice">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="button-container">
-        <button class="menu-open cursor-ice" data-modal-open>
-          <svg width="20" height="15">
-            <use href="./images/svg/icons.svg#icon-Burger"></use>
-          </svg>
-        </button>
-        <button type="button" class="btn-big btn-big__light btn-big__hidden">
-          Buy now
-          <svg width="11" height="11" class="btn-icon__light">
-            <use href="./images/svg/icons.svg#icon-pointer-right"></use>
-          </svg>
-        </button>
+<div class="main-container">
+  <header class="header">
+    <div class="container header-container">
+      <div class="second-header-container">
+        <nav class="header__nav">
+          <a href="./index.html" class="header__link cursor-ice">
+            <picture>
+              <source
+                srcset="./images/logo/logo-1200-1x.png 1x, ./images/logo/logo-1200-2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="./images/logo/logo-720-1x.png 1x, ./images/logo/logo-720-2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/logo/logo-320-1x.png 1x, ./images/logo/logo-320-2x.png 2x"
+                media="(min-width: 320px)"
+              />
+              <img src="./images/logo/logo-320-1x.png" alt="Лого" />
+            </picture>
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--current cursor-ice">Home</a>
+            </li>
+            <li class="nav__item"><a href="#contacts" class="nav__link cursor-ice">About us</a></li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link cursor-ice">How it’s made?</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link cursor-ice">Our products</a>
+            </li>
+            <li class="nav__item"><a href="#footer" class="nav__link cursor-ice">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="button-container">
+          <button class="menu-open cursor-ice" data-modal-open>
+            <svg width="20" height="15">
+              <use href="./images/svg/icons.svg#icon-Burger"></use>
+            </svg>
+          </button>
+          <button type="button" class="btn-big btn-big__light btn-big__hidden">
+            Buy now
+            <svg width="11" height="11" class="btn-icon__light">
+              <use href="./images/svg/icons.svg#icon-pointer-right"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-    <section class="hero">
+  </header>
+  <section class="hero">
+    <div class="container main-hero-container">
       <div class="hero-container">
         <h1 class="hero__title">ice cream made with <span class="hero__label">passion</span></h1>
         <ul class="hero__list">
@@ -115,7 +117,7 @@
           "
           media="(min-width: 320px)"
         />
-        <img src="./images/header-hero/ellipse-768-1x.png" alt="Эллипс" />
+        <img src="./images/header-hero/full-ellipse-320-1x.png" alt="Эллипс" />
       </picture>
       <div class="main-milk-container">
         <div class="milk-container">
@@ -166,6 +168,6 @@
         />
         <img src="./images/header-hero/girl-768-1x.png" alt="Девушка с мороженным" />
       </picture>
-    </section>
-  </div>
-</header>
+    </div>
+  </section>
+</div>
