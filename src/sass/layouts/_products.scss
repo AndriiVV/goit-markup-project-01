@@ -82,7 +82,6 @@
   padding-top: 5px;
   border-style: none;
 }
-
 .products__ice-cream {
   .products__button {
     fill: #b85d74;
@@ -90,7 +89,6 @@
   margin-bottom: 129px;
   background: var(--background-header-color);
 }
-
 .products__ice-coffee {
   .products__button {
     fill: #ad8854;
@@ -98,44 +96,12 @@
   margin-bottom: 129px;
   background: var(--background-orange-color);
 }
-
 .products__milkshakes {
   .products__button {
     fill: #88b152;
   }
   background: var(--background-green-color);
 }
-
-.products__ice-cream {
-  &::before {
-    background-image: url(../images/products/pink-ice-cream-320-1x.png);
-  }
-}
-
-.products__ice-coffee {
-  &::before {
-    background-image: url(../images/products/ice-cofee-320-1x.png);
-  }
-}
-
-.products__milkshakes {
-  &::before {
-    background-image: url(../images/products/milk-sheak-320-1x.png);
-  }
-}
-
-.products__preview::after {
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -45%);
-}
-
-.text-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
 .text-overlay {
   position: absolute;
   top: 0;
@@ -155,40 +121,114 @@
   // background-color: ;
   margin-top: 30px;
   transform: translateX(-110%);
-  transition: transform 250ms;
-
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &.shown {
-    transform: translateX(40%);
-
+    transform: translateX(0);
     & ~ .products__text {
       opacity: 0;
       pointer-events: none;
     }
   }
-
-  &::-webkit-scrollbar {
-    background-color: transparent;
-    width: 4px;
+}
+.products__ice-cream {
+  &::before {
+    background-image: url(../images/products/pink-ice-cream-320-1x.png);
   }
-  &::-webkit-scrollbar-thumb {
-    background-color: transparent;
-  }
-
-  &:hover::-webkit-scrollbar,
-  &:focus::-webkit-scrollbar {
-    background-color: #eba0a06e;
-    width: 4px;
-  }
-
-  &:hover::-webkit-scrollbar-thumb,
-  &:focus::-webkit-scrollbar-thumb {
-    background-color: green;
+  .text-overlay {
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 8px;
+      border-radius: 40%;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+    &:hover::-webkit-scrollbar,
+    &:focus::-webkit-scrollbar {
+      background-color: #f1b6c5;
+      width: 8px;
+    }
+    &:hover::-webkit-scrollbar-thumb,
+    &:focus::-webkit-scrollbar-thumb {
+      background-color: #b85d74;
+      border-radius: 40%;
+    }
   }
 }
-
-@media screen and (min-width: 480px) {
+.products__ice-coffee {
+  &::before {
+    background-image: url(../images/products/ice-cofee-320-1x.png);
+  }
+  .text-overlay {
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 8px;
+      border-radius: 40%;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+    &:hover::-webkit-scrollbar,
+    &:focus::-webkit-scrollbar {
+      background-color: #e4c79f;
+      width: 8px;
+    }
+    &:hover::-webkit-scrollbar-thumb,
+    &:focus::-webkit-scrollbar-thumb {
+      background-color: #ad8854;
+      border-radius: 40%;
+    }
+  }
 }
-
+.products__milkshakes {
+  &::before {
+    background-image: url(../images/products/milk-sheak-320-1x.png);
+  }
+  .text-overlay {
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 8px;
+      border-radius: 40%;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+    &:hover::-webkit-scrollbar,
+    &:focus::-webkit-scrollbar {
+      background-color: #cdeba5;
+      width: 8px;
+    }
+    &:hover::-webkit-scrollbar-thumb,
+    &:focus::-webkit-scrollbar-thumb {
+      background-color: #88b152;
+      border-radius: 40%;
+    }
+  }
+}
+.products__preview::after {
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -45%);
+}
+.text-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+@media screen and (min-width: 360px) {
+  .text-overlay {
+    &.shown {
+      transform: translateX(25%);
+    }
+  }
+}
+@media screen and (min-width: 440px) {
+  .text-overlay {
+    &.shown {
+      transform: translateX(40%);
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   .products {
     padding-top: 122px;
@@ -213,32 +253,27 @@
       height: 233px;
     }
   }
-
   .products__ice-cream {
     &::before {
       background-image: url(../images/products/pink-ice-cream-768-1x.png);
     }
   }
-
   .products__ice-coffee {
     &::before {
       background-image: url(../images/products/ice-cofee-768-1x.png);
     }
   }
-
   .products__milkshakes {
     &::before {
       background-image: url(../images/products/milk-sheak-768-1x.png);
     }
   }
-
   .text-overlay {
     &.shown {
       transform: translateX(0);
     }
   }
 }
-
 @media screen and (min-width: 1280px) {
   .products {
     padding-top: 127px;
@@ -247,11 +282,9 @@
   .products__title {
     margin-bottom: 259px;
   }
-
   .products__list {
     gap: 30px;
   }
-
   .products__item {
     padding-left: 44px;
     padding-right: 44px;
@@ -264,19 +297,16 @@
       height: 335px;
     }
   }
-
   .products__ice-cream {
     &::before {
       background-image: url(../images/products/pink-ice-cream-1200-1x.png);
     }
   }
-
   .products__ice-coffee {
     &::before {
       background-image: url(../images/products/ice-cofee-1200-1x.png);
     }
   }
-
   .products__milkshakes {
     &::before {
       background-image: url(../images/products/milk-sheak-1200-1x.png);
