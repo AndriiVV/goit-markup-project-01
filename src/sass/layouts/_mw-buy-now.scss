@@ -1,7 +1,7 @@
  /* Ripple Modal Styles */
  .modal {
     background: #fff;
-    // height: 100vh;
+    height: 100%;
     left: 0;
     opacity: 0;
     pointer-events: none;
@@ -13,6 +13,7 @@
     transition: opacity .5s linear;
     width: 100vw;
     z-index: 2;
+    
   }
   .modal.active {
     opacity: 1;
@@ -197,13 +198,13 @@
       color: var(--primary-white-color);
   }
 
-  .mw-buy-now__logo{
-      width: 199px;
-      height: 50px;
-      background-image: url('../images/logo/logo-1200-1x.png');
-  background-size: 199px 50px;
-  margin-bottom: 30px;
-  }
+//   .mw-buy-now__logo{
+//       width: 199px;
+//       height: 50px;
+//       background-image: url('../images/logo/logo-1200-1x.png');
+//   background-size: 199px 50px;
+//   margin-bottom: 30px;
+//   }
 
   .mw-buy-now__options_colors {
       display: flex;
