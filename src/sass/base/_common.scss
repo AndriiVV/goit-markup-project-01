@@ -5,7 +5,7 @@ body {
   font-style: normal;
 
   &.noscroll {
-    overflow: hidden;
+    overflow-y: hidden;
   }
 }
 
