@@ -3,6 +3,10 @@
 body {
   font-family: 'Titan One', cursive;
   font-style: normal;
+
+  &.noscroll {
+    overflow-y: hidden;
+  }
 }
 
 // Класс для оформления заголовков секций "Products", "How it's made?", "With passion"
