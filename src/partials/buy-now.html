@@ -1,13 +1,64 @@
-<div class="modal-backdrop is-hidden" data-modal-buy-now>
+<div class="modal-backdrop visually-hidden" data-modal-buy-now>
     <div class="modal-window-buy-now cursor-ice">
       <button type="button" class="close-btn-buy-now" data-modal-buy-now-close>
-        <svg class="close-btn-icon" width="14px" height="14px">
+        <svg class="close-btn-buy-now-icon" width="14px" height="14px">
           <use href="./images/svg/icons.svg#icon-close"></use>
         </svg>
       </button>
       
+      <h2 class="mw-buy-now__title">Thank you for choosing <div class="mw-buy-now__title_white"> the best ice cream</div>
+        in the world!</h2>
+     <!-- <div class="mw-buy-now__logo"></div> -->
+     <p class="mw-buy-now__options__text">Choose a color:</p>
+   <div class="mw-buy-now__options_colors">
+           <div>
+             <label class="options_colors-white">
+           <input type="radio" name="color" value="white">
+           <img src="./images/mw-buy-now/top-ice-cream-white.png">
+         </label>
+         <img class="options_colors_conus" src="./images/mw-buy-now/conus-ice-cream-big.png">
+
+       </div>
+       <div >
+          <label>
+           <input type="radio" name="color" value="yellow">
+           <img src="./images/mw-buy-now/top-ice-cream-yellow.png">
+         </label>
+         <img class="options_colors_conus" src="./images/mw-buy-now/conus-ice-cream-big.png">
+       </div>
+       <div >
+         <label>
+           <input type="radio" name="color" value="mint">
+           <img src="./images/mw-buy-now/top-ice-cream-mint.png">
+         </label>
+         <img class="options_colors_conus" src="./images/mw-buy-now/conus-ice-cream-big.png">
+
+       </div>
+   </div>
+   <div class="options_quantity_and_tel">
+     <span class="options_quantity-first">
+     <label class="options_quantity" for="quantity">Write a quantity:</label>
+<input class="quantity" type="number" id="quantity" name="quantity"
+      min="1" max="100">
+     </span>
+     <span>
+      <label class="options_tel" for="user-tel">Your phone:</label>
+     
+     
+     <input
+             class="user-tel"
+             type="tel"
+             name="user-tel"
+             id="user-tel"
+           />
+         </span>    
+            
+   </div>
+   <button class="mw-buy-now__submit-button btn btn-big btn-big__dark" type="submit">Confirm</button>
+
+   <!-- <div class="mw-buy-now__bg-image"></div> -->
+
       </div>
     </div>
 
 
-<script src="./js/modal-buy-now.js"></script>
